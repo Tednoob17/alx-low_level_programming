@@ -1,0 +1,2 @@
+#!/bin/bash
+$myfile=echo "main.c" |tr ".c" ".o" |gcc -c $CFILE >> $myfile
