@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
-<<<<<<< HEAD
-*main -Display the size of different type who exist in C
-*
-*Return :Size of type 
-*/
+ * *main -Display the size of different type who exist in C
+ *
+ *Return :Size of type 
+ */
 int main(void)
 {
 printf("Size of a char :%li byte(s)\n", sizeof(char));
