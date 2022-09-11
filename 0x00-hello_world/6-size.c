@@ -1,5 +1,6 @@
 #include <stdio.h>
 /**
+<<<<<<< HEAD
 *main -Display the size of different type who exist in C
 *
 *Return :Size of type 
