@@ -10,7 +10,7 @@ int main(void)
 {
 int alp = 48;
 
-	while (alp < = 57)
+	while (alp <= 57)
 	{
 		putchar (alp);
 		alp++;

@@ -12,6 +12,10 @@ int alp = 48;
 	while (alp <= 57)
 	{
 		putchar (alp);
+			if (alp == 57)
+			{
+				break;
+			}
 		putchar (44);
 		putchar (' ');
 		alp++;
