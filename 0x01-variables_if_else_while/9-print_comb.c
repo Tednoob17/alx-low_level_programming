@@ -11,9 +11,11 @@ int main(void)
 int alp = 48;
 	while (alp <= 57)
 	{
-		putchar(alp);
+		putchar (alp);
+		putchar (44);
+		putchar (' ');
 		alp++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }

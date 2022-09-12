@@ -2,18 +2,19 @@
 
 /*main return 0 (success)*/
 /**
- * main - Print the alphabet
+ * main - Print the single number
  *
  * Return:  0 on success. Error code otherwise
  */
 int main(void)
 {
-int alp=48;
-	while(alp <= 57)
+int alp = 48;
+
+	while (alp < = 57)
 	{
-		putchar(alp);
+		putchar (alp);
 		alp++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }

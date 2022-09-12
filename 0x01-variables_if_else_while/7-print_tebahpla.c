@@ -1,20 +1,19 @@
-#include <stdio.h>
-
-/*main return 0 (success)*/
+#include<stdio.h>
+#include <stdlib.h>
 /**
- * main - Print the alphabet
- *
- * Return:  0 on success. Error code otherwise
- */
- int main(void)
+*main - Open block (Display the rev alphabet)
+*
+*Return:  Always 0 (success)
+*/
+
+int main(void)
 {
-int alp='z';
-	while(alp >= 'a')
+int a = 'z';
+	while (a <= 'a')
 	{
-	  putchar(alp);
-	 alp--;
-		
+	putchar (a);
+	a--;
 	}
-	putchar('\n');
-	return (0);
+	putchar ('\n');
+return (0);
 }
