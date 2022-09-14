@@ -1,9 +1,8 @@
 #include "main.h"
 /**
-*main - print alphabet
-*
-*Return : on success (0) error otherwise
-*/
+ * print_alphabet - Entry point
+ * Return:0
+ */
 void print_alphabet(void)
 {
 	char a = 'a';

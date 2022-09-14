@@ -1,6 +1,6 @@
 include "main.h"
 /**
-*main - print alphabet ten time
+* print_alphabet_x10 - print alphabet ten time
 *
 *Return : Always 0 when it's success .Error otherwise
 */

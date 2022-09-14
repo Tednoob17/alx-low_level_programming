@@ -1,10 +1,10 @@
 #include "main.h"
-/*
-*main - check the code.
-*
-*
-*Return : Always success error otherwise
-*/
+/**
+ * _isalpha - check for lower case letter
+ * @c : character to check
+ * Return:0 or 1
+ */
+
 int _isalpha(int c)
 {
 	if (c >= 97 && c <= 122)
