@@ -1,23 +1,23 @@
 include "main.h"
 /**
-*main -Print alphabet ten time
+*main - print alphabet ten time
 *
 *Return : Always 0 when it's success .Error otherwise
 */
+
 void print_alphabet_x10(void)
 {
-int i =0;
+int i = 0;
 char a = 'a';
 	while (i <= 9)
 	{
-		while ( a <= 'z')
+		while (a <= 'z')
 		{
 			_putchar (a);
 			a++;
 		}
 	_putchar('\n');
-	a= 'a';
+	a = 'a';
 	i++;
 	}
-
 }
