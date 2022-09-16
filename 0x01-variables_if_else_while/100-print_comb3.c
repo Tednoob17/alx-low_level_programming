@@ -25,5 +25,6 @@ int n1 = 48, n2 = 49;
 			n1++;
 			n2 = n1 + 1;
 	}
+	putchar('\n');
 return (0);
 }
