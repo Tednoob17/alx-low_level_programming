@@ -2,7 +2,7 @@
 /**
  * *main -Display the size of different type who exist in C
  *
- *Return: Always 0 (Success) 
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
