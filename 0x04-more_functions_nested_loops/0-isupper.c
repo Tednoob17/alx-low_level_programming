@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- *function - this funtion return 1 if number is a uppercase and 0 otherwise
- *@c :this value is a number that we verify
- *
- *Return :0 otherwise 1
+ * _isupper - check for upper case letter
+ * @c : character to check the case
+ * Return:0 or 1
  */
 int _isupper(int c)
 {
