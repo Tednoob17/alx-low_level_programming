@@ -6,15 +6,8 @@
  */
 int _isupper(int c)
 {
-	if (c >= 97 && c <= 122)
-	{
-		return (0);
-		_putchar('\n');
-	}
-	else
-	{
+	if (c >= 65 && c <= 90)
 		return (1);
-		_putchar('\n');
-	}
-
+	else
+		return (0);
 }
