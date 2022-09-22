@@ -3,7 +3,7 @@
 /**
  *print_most_numbers - print the number except 2 and 4
  *
- *Return :Vod
+ *Return :Void
  */
 void print_most_numbers(void)
 {
