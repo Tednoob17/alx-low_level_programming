@@ -1,21 +1,22 @@
 #include "main.h"
-/*
+#include <stdio.h>
+/**
+ *print_most_numbers - print the number except 2 and 4
  *
- *
- *
- *
+ *Return :Vod
  */
 void print_most_numbers(void)
 {
 	int a = 48;
-	while(a <= 57)
+
+	while (a <= 57)
 	{
-		if(a == 50 || a == 52)
+		if (a == 50 || a == 52)
 		{
-		break;
+			a++;
 		}
-	_putchar(a);
+	putchar(a);
 	a++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
