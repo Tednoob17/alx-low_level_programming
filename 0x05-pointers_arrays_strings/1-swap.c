@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 /**
 *swap_int - change two variables in parameters
 *@a: first value
@@ -7,8 +7,8 @@
 */
 void swap_int(int *a, int *b)
 {
-	int c= *a;
+	int c = *a;
 
 	*a = *b;
 	*b = c;
-} 
+}
