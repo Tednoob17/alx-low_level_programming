@@ -28,4 +28,5 @@ void rev_string(char *s)
 		i++;
 		half--;
 	}
+	_putchar('\n');
 }
