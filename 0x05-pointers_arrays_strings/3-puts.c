@@ -17,10 +17,6 @@ void _puts(char *str)
 			_putchar(str[i]);
 			i++;
 		}
-		_putchar('\n');
-		if (m == 0 )
-		{
-			_putchar('\n');
-		}
 	}
+	_putchar('\n');
 }
