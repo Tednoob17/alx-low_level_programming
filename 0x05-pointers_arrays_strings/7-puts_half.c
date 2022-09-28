@@ -25,5 +25,17 @@ void puts_half(char *str)
 				temp++;
 			}
 		}
+		else if (m % 2 == 1)
+		{
+			temp = (m - 1) / 2;
+			while (str[temp] != '\0')
+			{
+				_putchar(str[temp]);
+				temp++;
+			}
+		}
+		else
+			_putchar('\n');
+
 		_putchar('\n');
 }
