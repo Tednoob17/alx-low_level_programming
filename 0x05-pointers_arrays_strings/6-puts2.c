@@ -20,6 +20,7 @@ void puts2(char *str)
 		if (i == 0 || (m % 2 == 0 && i % 2 == 0))
 		{
 			_putchar(str[i]);
+				i++;
 		}
 	}
 	_putchar('\n');
