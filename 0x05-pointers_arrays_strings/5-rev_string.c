@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h" https://www.youtube.com/watch?v=PlsSS16k8Vk
 /**
  * rev_string - reverses a string.
  * @s: input string.
