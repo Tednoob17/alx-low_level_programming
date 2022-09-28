@@ -42,6 +42,6 @@ while (n1 <= 57)
 	n3 = 48;
 	n4 = 48;
 }
-putchar('\n');
+	putchar('\n');
 return (0);
 }

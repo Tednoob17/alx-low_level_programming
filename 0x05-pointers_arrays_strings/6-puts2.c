@@ -1,1 +1,19 @@
- #include "main.h"
+#include "main.h"
+/**
+ *
+ *
+ *
+ *
+ *
+ */
+void puts2(char *str)
+{
+
+
+
+
+
+
+
+
+}
