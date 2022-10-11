@@ -6,7 +6,7 @@
 * @d : struct gog
 *Return: Void
 */
-vvoid print_dog(struct dog *d)
+void print_dog(struct dog *d)
 {
 	if (d)
 	{
