@@ -1,9 +1,9 @@
 #include "dog.h"
 #include <stdio.h>
-#include <stddef.h>
 /**
 * print_dog - print dog information
-* @d : struct gog
+* @d : struct dog
+*
 *Return: Void
 */
 void print_dog(struct dog *d)
