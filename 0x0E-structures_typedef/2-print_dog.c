@@ -6,24 +6,20 @@
 * @d : struct gog
 *Return: Void
 */
-void print_dog(struct dog *d)
+vvoid print_dog(struct dog *d)
 {
 	if (d)
 	{
-		printf("Name: %s\n", d->name);
-		printf("Age: %f\n", d->age);
-		printf("Owner: %s\n", d->owner);
-	}
-	else if (!(d->name))
-	{
-		printf("Name: (nil)\n");
-		printf("Age: %f\n", d->age);
-		printf("Owner: %s\n", d->owner);
-	}
-	else
-	{
-		printf("Name: (nil)\n");
-		printf("Owner: (nil)\n");
-	}
+		if (!(d->name))
+			printf("Name: (nil)\n");
+		else
+			printf("Name: %s\n", d->name);
 
+		printf("Age: %f\n", d->age);
+
+		if (!(d->owner))
+			printf("Owner: (nil)\n");
+		else
+			printf("Owner: %s\n", d->owner);
+	}
 }
