@@ -38,7 +38,8 @@ int _atoi(char *s)
 	 }
 	  else
 	      break;
+
+	  i++;
 	}
-	i++;
       return (sign * n);
 }
