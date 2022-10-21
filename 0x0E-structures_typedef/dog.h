@@ -9,7 +9,7 @@ typedef struct dog dog_t;
 /**
  * struct dog - struct who will doing store dog information
  *@name : it's a name of dog
- *@age : it's a age og=f dog
+ *@age : it's a age of dog
  *@owner : the owner dog name
  *
  *Description : this struct call a dog type for who store her name
