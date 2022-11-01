@@ -3,6 +3,7 @@
 *read_textfile - read a text file and and print letters
 *@filename: It's a name file that we use
 *@letters:  It's a numbres of char when we can display
+*
 *Return: Number of char printed
 */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -16,7 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fp == -1)
 		return (0);
 
-	else if (!(filename))
+	else if (!filename)
 		return (0);
 
 	c = malloc(sizeof(char) * (letters));
@@ -27,6 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	out = write(STDOUT_FILENO, c, inp);
 
 	close(fp);
+
 	free(c);
 
 	return (out);
