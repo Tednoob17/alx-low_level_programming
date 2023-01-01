@@ -8,7 +8,6 @@ int main(void)
 {
 int n1 = 48, n2 = 49, n3 = 50;
 
-
 while (n1 <= 55)
 {
 	while (n2 <= 56)
