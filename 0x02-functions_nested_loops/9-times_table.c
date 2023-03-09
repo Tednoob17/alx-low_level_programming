@@ -16,7 +16,6 @@
 		   printf(" ");
 		  for(int j=0; j < 9;j++)
 		  {
-		  	
 			  b=i * c;
 			  if(b >= 10)
 			  {

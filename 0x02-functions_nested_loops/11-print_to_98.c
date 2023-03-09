@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
+* print_to_98 - print a number for n to 98
+*@n :integer giving in parameters
 *
-*
-*
-*
+* return: Void
 */
 void print_to_98(int n)
 {
@@ -46,19 +46,3 @@ void print_to_98(int n)
 	}
 	printf("\n");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
