@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+/*main return 0 (success)*/
+/**
+ * main - Print if n number is positive or negative or zero
+ *
+ * Return:  0 on success. Error code otherwise
+ */
+int main(void)
+{
+	int n,ch;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	
+	do{
+		printf("Entrez une valeur\n");
+		scanf("%d",&ch);
+		if (ch < n)
+		{
+			printf("%d est inferieur a la  cachée\n", n);
+		}
+		else if (n > 0)
+		{
+			printf("%d est superieur a la  cachée\n", n);
+		}
+	  }while (ch != n);
+	printf("Félicitations vous avez trouvé la valeur cachée\n", n);
+	return (0);
+}

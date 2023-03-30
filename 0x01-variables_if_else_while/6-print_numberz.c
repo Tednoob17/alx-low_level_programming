@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-/*main return 0 (success)*/
 /**
- * main - Print the single number
- *
- * Return:  0 on success. Error code otherwise
- */
+* main - Entry point
+*
+* Return: returns 0 when everything works fine
+*
+*/
+
 int main(void)
 {
-int alp = 48;
+	int n;
 
-	while (alp <= 57)
+	for (n = 48; n < 58; ++n)
 	{
-		putchar (alp);
-		alp++;
+		putchar(n);
 	}
-	putchar ('\n');
+	putchar(10);
 	return (0);
 }

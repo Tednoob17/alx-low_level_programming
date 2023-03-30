@@ -1,47 +1,31 @@
 #include <stdio.h>
+
 /**
-*main -Entry block ( Print only the smallest combination of two digits)
-*
-*Return:  0 on success. Error code otherwise
-*/
+ * main - entry point
+ *
+ * Return: always 0
+ */
 int main(void)
 {
-int n1 = 48, n2 = 48, n3 = 48, n4 = 49;
+	int c, c_two;
 
-
-while (n1 <= 57)
-{
-	while (n2 <= 56)
+	for (c = 0; c <= 98; c++)
 	{
-		while (n3 <= 57)
+		for (c_two = c + 1; c_two <= 99; c_two++)
 		{
-			while (n4 <= 57)
+			putchar('0' + c / 10);
+			putchar('0' + c % 10);
+			putchar(32);
+			putchar('0' + c_two / 10);
+			putchar('0' + c_two % 10);
+			if (c / 10 != 9 || c % 10 != 8)
 			{
-				putchar(n1);
-				putchar(n2);
-				putchar(' ');
-				putchar(n3);
-				putchar(n4);
-					if (n1 == 57 && n2 == 56 && n3 == 57 && n4 == 57)
-					{
-					break;
-					}
-				putchar(',');
-				putchar(' ');
-				n4++;
+				putchar(44);
+				putchar(32);
 			}
-			n3++;
-			n4 = 48;
 		}
-		n2++;
-		n3 = 48;
-		n4 = 48;
 	}
-	n1++;
-	n2 = 48;
-	n3 = 48;
-	n4 = 48;
-}
-	putchar('\n');
-return (0);
+
+	putchar(10);
+	return (0);
 }

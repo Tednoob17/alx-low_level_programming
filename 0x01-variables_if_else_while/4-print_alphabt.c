@@ -1,25 +1,23 @@
 #include <stdio.h>
-/*main return 0 (success)*/
+
 /**
- * main - Print the alphabet
- *
- * Return:  0 on success.
- */
+* main - Entry point
+*
+* Return: returns 0 when everything works fine
+*
+*/
+
 int main(void)
 {
-int alp = 'a';
-	while (alp <= 'z')
+	int n;
+
+	for (n = 97; n <= 122; ++n)
 	{
-		if (alp == 'e' || alp == 'q')
+		if (n != 101 && n != 113)
 		{
-			alp++;
-		}
-		else
-		{
-			putchar (alp);
-			alp++;
+			putchar(n);
 		}
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }

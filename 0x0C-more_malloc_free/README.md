@@ -1,76 +1,53 @@
-# C - More malloc, free
+0x0C. C - More malloc, free
+===========================
 
-In this project, I learned about using `exit`, `calloc`, and `realloc` in C.
+-   By Julien Barbier
 
-## Tests :heavy_check_mark:
+Concepts
+--------
 
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+*For this project, students are expected to look at this concept:*
 
-## Header File :file_folder:
+-   [Automatic and dynamic allocation, malloc and free](https://alx-intranet.hbtn.io/concepts/62)
 
-* [main.h](./main.h): Header file containing prototypes for all functions written in
-the project.
+Resources
+---------
 
-| File                 | Prototype                                                                  |
-| -------------------- | -------------------------------------------------------------------------- |
-| `0-malloc_checked.c` | `void *malloc_checked(unsigned int b);`                                    |
-| `1-string_nconcat.c` | `char *string_nconcat(char *s1, char *s2, unsigned int n);`                |
-| `2-calloc.c`         | `char *string_nconcat(char *s1, char *s2, unsigned int n);`                |
-| `3-array_range.c`    | `int *array_range(int min, int max);`                                      |
-| `100-realloc.c`      | `void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);` |
+**Read or watch**:
 
-## Tasks :page_with_curl:
+-   [Do I cast the result of malloc?](https://alx-intranet.hbtn.io/rltoken/uKhvfzpF3v8Be10NCZlQtA "Do I cast the result of malloc?")
 
-* **0. Trust no one**
-  * [0-malloc_checked.c](./0-malloc_checked.c): C function that returns a
-  pointer to a newly-allocated space in memory using `malloc`.
-    * If `malloc` fails, the function causes normal process termination with a status value
-    of `98`.
+**man or help**:
 
-* **1. string_nconcat**
-  * [1-string_nconcat.c](./1-string_nconcat.c): C function that returns a pointer to a
-  newly-allocated space in memory containing the concatenation of two strings.
-    * The returned pointer contains `s1` followed by the first `n` bytes
-    of `s2`, null-terminated.
-    * If `n` is greater than or equal to the length of `s2`, the entire string `s2` is used.
-    * If `NULL` is passed, the function treats the parameter as an empty string.
-    * If the function fails - returns `NULL`.
+-   `exit (3)`
+-   `calloc`
+-   `realloc`
 
-* **2. _calloc**
-  * [2-calloc.c](./2-calloc.c): C function that returns a pointer to a newly-allocated space
-  in memory for an array, using `malloc`.
-    * Allocates memory for an array of `nmemb` elements of `size` bytes each.
-    * The memory is set to zero.
-    * If `nmemb` = 0, `size` = `0`, or the function fail - returns `NULL`.
+Learning Objectives
+-------------------
 
-* **3. array_range**
-  * [3-array_range.c](./3-array_range.c): C function that returns a pointer to a
-  newly-allocated space in memory containing an array of integers.
-    * The array contains all the values from parameters `min` to `max`, inclusive,
-    ordered from `min` to `max`.
-    * If `min > max` or the function fails - returns `NULL`.
+At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/UzyOEQw26ytlKDLQq7AGXw "explain to anyone"), **without the help of Google**:
 
-* **4. _realloc**
-  * [100-realloc.c](./100-realloc.c): C function that reallocates a memory block using
-  `malloc` and `free`.
-    * The parameter `ptr` is a pointer to the memory previously allocated with
-    a call to `malloc: malloc(old_size)`.
-    * The paramter `old_size` is the size, in bytes, of the allocated space for `ptr`.
-    * The paramter `new_size` is the new size, in bytes, of the new memory block.
-    * The contens of `ptr` are copied to the newly-allocated space in the range from the
-    start of `ptr` up to the minimum of `old_size` and `new_size`.
-    * If `new_size` > `old_size`, the "added" memory is not initialized.
-    * If `new_size` == `old_size`, the function returns `ptr`.
-    * If `ptr` is `NULL`, the call is equivalent to `malloc(new_size)` for all values of
-    `old_size` and `new_size`.
-    * If `new_size` = 0 and `ptr` is not `NULL`, the call is equivalent to
-    `free(ptr)` and the function returns `NULL`.
+### General
 
-* **5. We must accept finite disappointment, but never lose infinite hope**
-  * [101-mul.c](./101-mul.c): C program that multiplies two positive numbers.
-    * Usage: `mul num1 num2`.
-    * The function assumes `num1` and `num2` are passed in base 10.
-    * Prints the result followed by a new line.
-    * If the number of arguments is incorrect or either of `num1` or `num2`
-    contains non-digits, the function prints `Error` followed by a new line and
-    exits with a status of `98`.
+-   How to use the `exit` function
+-   What are the functions `calloc` and `realloc` from the standard library and how to use them
+
+Requirements
+------------
+
+### General
+
+-   Allowed editors: `vi`, `vim`, `emacs`
+-   All your files will be compiled on Ubuntu 20.04 LTS using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
+-   All your files should end with a new line
+-   A `README.md` file, at the root of the folder of the project is mandatory
+-   Your code should use the `Betty` style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl "betty-style.pl") and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl "betty-doc.pl")
+-   You are not allowed to use global variables
+-   No more than 5 functions per file
+-   The only C standard library functions allowed are `malloc`, `free` and `exit`. Any use of functions like `printf`, `puts`, `calloc`, `realloc` etc... is forbidden
+-   You are allowed to use [_putchar](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c "_putchar")
+-   You don't have to push `_putchar.c`, we will use our file. If you do it won't be taken into account
+-   In the following examples, the `main.c` files are shown as examples. You can use them to test your functions, but you don't have to push them to your repo (if you do we won't take them into account). We will use our own `main.c` files at compilation. Our `main.c` files might be different from the one shown in the examples
+-   The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h`
+-   Don't forget to push your header file

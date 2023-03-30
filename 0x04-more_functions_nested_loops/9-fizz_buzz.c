@@ -1,29 +1,44 @@
-#include <unistd.h>
-#include "main.h"
+#include <stdio.h>
+
 /**
-* fizz_buzz - print value to 1 into 100
+*main - program that prints either number
+*or fizz or buzz or fizzBuzz
 *
-*@size : value display
 *
-*Return:Void
+*Return: returns 0
 */
-void fizz_buzz(void)
+
+int main(void)
 {
-	int i = 0;
-		for (i = 1;i <= 100;i++)		
+	int num = 1;
+
+	while (num++ < 100)
+	{
+		if ((num % 3 == 0) && (num % 5 == 0))
 		{
-			_putchar(i);
-				if (i > 9)
-				{
-					_putchar(i / 10 + '0');
-					_putchar(i % 10 + '0');
-				}
-				else if (i % 3 == 0)
-					write (1,"Fizz",4);
-				else if (i % 5 == 0)
-					write (1,"Buzz",4);
-				else if (i % 3 == 0 && i % 5 == 0)
-					write (1,"FizzBuzz",8);	
+			printf("FizzBuzz ");
 		}
-	_putchar('\n');
+		else if ((num % 3) == 0)
+		{
+			printf("Fizz ");
+		}
+		else if ((num % 5) == 0)
+		{
+			if (num != 100)
+			{
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
+			}
+		}
+		else
+		{
+			printf("%d ", num);
+		}
+	}
+	printf("\n");
+
+	return (0);
 }

@@ -1,40 +1,23 @@
 #include "main.h"
 /**
-*jack_bauer- Display 24-h time
+*jack_bauer - prints each minute of the day
 *
-*Return :None
+*Return:returns 0
 */
 void jack_bauer(void)
 {
-int n1 = 48, n2 = 48, n3 = 48, n4 = 48;
-
-while (n1 <= 50)
+int min, hour;
+for (hour = 0; hour <= 23; hour++)
 {
-	while (n2 <= 51)
-	{
-		while (n3 <= 53)
-		{
-			while (n4 <= 57)
-			{
-				_putchar(n1);
-				_putchar(n2);
-				_putchar(':');
-				_putchar(n3);
-				_putchar(n4);
-				_putchar('\n');
-				n4++;
-			}
-		 n3++;
-		n4 = 48;
-	}
-	n2++;
-	n3 = 48;
-	n4 = 48;
+for (min = 0; min <= 59; min++)
+{
+_putchar((hour / 10) + '0');
+_putchar((hour % 10) + '0');
+_putchar(':');
+_putchar((min / 10) + '0');
+_putchar((min % 10) + '0');
+_putchar(10);
 }
-	n1++;
-	n2 = 48;
-	n3 = 48;
-	n4 = 48;
 }
 
 }

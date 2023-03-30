@@ -1,25 +1,20 @@
-#include<stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
+
 /**
-*main -Open block (Display the alphabet in lower and uppercase)
+* main - Entry point
 *
-*Return:  Always 0 (success)
+* Return: returns 0 when everything works fine
+*
 */
 
 int main(void)
 {
-int a = 'a';
-int b = 'A';
-	while (a <= 'z')
-	{
-	putchar(a);
-	a++;
-	}
-	while (b <= 'Z')
-	{
-	putchar(b);
-	b++;
-	}
-	putchar('\n');
-return (0);
+	int n;
+
+	for (n = 97; n <= 122; ++n)
+		putchar(n);
+	for (n = 65; n <= 90; ++n)
+		putchar(n);
+	putchar(10);
+	return (0);
 }

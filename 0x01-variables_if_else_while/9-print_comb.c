@@ -1,25 +1,26 @@
 #include <stdio.h>
 
-/*main return 0 (success)*/
 /**
- * main - Print the alphabet
- *
- * Return:  0 on success.
- */
+* main - Entry point
+*
+* Return: returns 0 when everything works fine
+*
+*/
+
 int main(void)
 {
-int alp = 48;
-	while (alp <= 57)
+	int c;
+
+	for (c = 48; c <= 57; c++)
 	{
-		putchar (alp);
-			if (alp == 57)
-			{
-				break;
-			}
-		putchar (44);
-		putchar (' ');
-		alp++;
+		putchar(c);
+		if (c <= 56)
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
-	putchar ('\n');
+
+	putchar(10);
 	return (0);
 }

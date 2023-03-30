@@ -1,19 +1,20 @@
 #include <stdio.h>
 
-/*main return 0 (success)*/
 /**
- * main - Print the alphabet
- *
- * Return:  0 on success.
- */
+* main - Entry point
+*
+* Return: returns 0 when everything works fine
+*
+*/
+
 int main(void)
 {
-int alp = 48;
-	while (alp <= 57)
+	int n;
+
+	for (n = 0; n < 10; ++n)
 	{
-		putchar(alp);
-		alp++;
+		printf("%d", n);
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
