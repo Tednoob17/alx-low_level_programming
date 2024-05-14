@@ -1,6 +1,5 @@
 /**
  *File: main.h
- *Author: Arsene Awounou
  *Desc: header file
  */
 
